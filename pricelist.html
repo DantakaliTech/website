@@ -1,113 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Advertising Pricing</title>
+    <meta charset="utf-8">
+    <title>Dantakali Tech - Digital Marketing Agency in Nepal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="title" name="Dantakali Tech">
+    <meta content="description" name="Dantakali Tech is a leading digital marketing agency in Nepal, specializing in helping businesses grow their online presence and achieve their marketing goals. We offer a wide range of services">
+    <meta content="keywords" name="dantakalitech, dantakali_tech, dantakali-tech digital-marketing-in-nepal,dantakali">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Arial', sans-serif;
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+	<meta name="facebook-domain-verification" content="gazf5cxenlmr25z6atokoto523t8cg" />
+	
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K86PNMQM');</script>
+<!-- End Google Tag Manager -->
+
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEZ5XXDR4F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SEZ5XXDR4F');
+</script>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Arial', sans-serif;
+    }
+    .package-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .package-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .table-responsive {
+        overflow-x: auto;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fffff;
+    }
+    h5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #074a9c;
+    }
+    p {
+        font-size: 1rem;
+        color: #000000;
+    }
+    @media (max-width: 767.98px) {
+        h2 {
+            font-size: 1.5rem;
         }
         .package-card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 15px;
         }
-        .package-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .table-responsive {
-            overflow-x: auto;
-        }
-        .table {
-            margin-bottom: 0;
-        }
-        h2 {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #333;
-        }
-        h5 {
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: #007bff;
-        }
-        p {
-            font-size: 1rem;
-            color: #555;
-        }
-        @media (max-width: 767.98px) {
-            h2 {
-                font-size: 1.5rem;
-            }
-            .package-card {
-                padding: 15px;
-            }
-        }
-    </style>
+    }
+</style>
+	
 </head>
-<body>
-    <div class="container mt-4">
-        <h2 class="text-center mb-4">Dantakali Tech Facebook/Instagram Advertising Pricing</h2>
-        <div class="row">
-            <script>
-                let packages = [
-                    { reach: "1200 - 3400", prices: [1260, 2520, 5400] },
-                    { reach: "2400 - 6800", prices: [2520, 5040, 10800] },
-                    { reach: "3600 - 10200", prices: [3780, 7560, 16200] },
-                    { reach: "4800 - 13600", prices: [5040, 10080, 21600] },
-                    { reach: "6000 - 17000", prices: [6300, 12600, 27000] },
-                    { reach: "7200 - 20400", prices: [7560, 15120, 32400] },
-                    { reach: "8400 - 23800", prices: [8820, 17640, 37800] },
-                    { reach: "9600 - 27200", prices: [10080, 20160, 43200] },
-                    { reach: "10800 - 30600", prices: [11340, 22680, 48600] },
-                    { reach: "12000 - 34000", prices: [12600, 25200, 54000] },
-                    { reach: "13200 - 37400", prices: [13860, 27720, 59400] },
-                    { reach: "14400 - 40800", prices: [15120, 30240, 64800] },
-                    { reach: "15600 - 44200", prices: [16380, 32760, 70200] },
-                    { reach: "16800 - 47600", prices: [17640, 35280, 75600] },
-                    { reach: "18000 - 51000", prices: [18900, 37800, 81000] },
-                    { reach: "19200 - 54400", prices: [20160, 40320, 86400] },
-                    { reach: "20400 - 57800", prices: [21420, 42840, 91800] },
-                    { reach: "21600 - 61200", prices: [22680, 45360, 97200] },
-                    { reach: "22800 - 64600", prices: [23940, 47880, 102600] },
-                    { reach: "24000 - 68000", prices: [25200, 50400, 108000] }
-                ];
-                
-                let days = [7, 14, 30];
-                let container = document.querySelector('.row');
 
-                packages.forEach((pkg, index) => {
-                    let html = `
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <div class="package-card">
-                                <h5 class="text-primary">Package ${index + 1}</h5>
-                                <p><strong>Per Day People Reach:</strong> ${pkg.reach}</p>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead class="table-light">
-                                            <tr><th>Days</th><th>Price (रु)</th></tr>
-                                        </thead>
-                                        <tbody>
-                                            ${days.map((day, i) => `<tr><td>${day}</td><td>Rs. ${pkg.prices[i]}</td></tr>`).join('')}
-                                        </tbody>
-                                    </table>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K86PNMQM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="container-xxl bg-white p-0">
+	    
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div id="home" class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0">Dantakali Tech</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="#home" class="nav-item nav-link active"></a>
+                        <a href="#about" class="nav-item nav-link"></a>
+                        <a href="#services" class="nav-item nav-link"></a>
+                        <a href="#ourteam" class="nav-item nav-link"></a>
+                        <a href="#contact" class="nav-item nav-link"></a>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            <div class="d-none d-lg-block container-xxl bg-primary hero-header"></div>
+                <div class="container">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <div class="container mt-4">
+            <h2 class="text-center mb-4">Facebook/Instagram Advertising Pricing</h2>
+            <div class="row">
+                <script>
+                    let packages = [
+                        { reach: "1200 - 3400", prices: [1260, 2520, 5400] },
+                        { reach: "2400 - 6800", prices: [2520, 5040, 10800] },
+                        { reach: "3600 - 10200", prices: [3780, 7560, 16200] },
+                        { reach: "4800 - 13600", prices: [5040, 10080, 21600] },
+                        { reach: "6000 - 17000", prices: [6300, 12600, 27000] },
+                        { reach: "7200 - 20400", prices: [7560, 15120, 32400] },
+                        { reach: "8400 - 23800", prices: [8820, 17640, 37800] },
+                        { reach: "9600 - 27200", prices: [10080, 20160, 43200] },
+                        { reach: "10800 - 30600", prices: [11340, 22680, 48600] },
+                        { reach: "12000 - 34000", prices: [12600, 25200, 54000] },
+                        { reach: "13200 - 37400", prices: [13860, 27720, 59400] },
+                        { reach: "14400 - 40800", prices: [15120, 30240, 64800] },
+                        { reach: "15600 - 44200", prices: [16380, 32760, 70200] },
+                        { reach: "16800 - 47600", prices: [17640, 35280, 75600] },
+                        { reach: "18000 - 51000", prices: [18900, 37800, 81000] },
+                        { reach: "19200 - 54400", prices: [20160, 40320, 86400] },
+                        { reach: "20400 - 57800", prices: [21420, 42840, 91800] },
+                        { reach: "21600 - 61200", prices: [22680, 45360, 97200] },
+                        { reach: "22800 - 64600", prices: [23940, 47880, 102600] },
+                        { reach: "24000 - 68000", prices: [25200, 50400, 108000] }
+                    ];
+                    
+                    let days = [7, 14, 30];
+                    let container = document.querySelector('.row');
+    
+                    packages.forEach((pkg, index) => {
+                        let html = `
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <div class="package-card">
+                                    <h5 class="text-primary">Package ${index + 1}</h5>
+                                    <p><strong>Per Day People Reach:</strong> ${pkg.reach}</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead class="table-light">
+                                                <tr><th>Days</th><th>Price (रु)</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                ${days.map((day, i) => `<tr><td>${day}</td><td>Rs. ${pkg.prices[i]}</td></tr>`).join('')}
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    `;
-                    container.innerHTML += html;
-                });
-            </script>
+                        `;
+                        container.innerHTML += html;
+                    });
+                </script>
+            </div>
         </div>
+
+
+
+        <!-- Footer Start -->
+        <div id="contact" class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://x.com/DantakaliTech"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/dantakali.tech"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@DantakaliTech"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/dantakali.tech/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/dantakali-tech"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+	<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq4824d85cd3509cf1f9f523b3878dd4509e044c725b821472bfee280a768ae8ac" defer></script>
 </body>
+
 </html>
