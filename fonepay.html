@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonepay QR Code</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            max-width: 500px;
+        }
+        .qr-image {
+            max-width: 100%;
+            height: auto;
+            pointer-events: none;
+            user-drag: none;
+            -webkit-user-drag: none;
+        }
+        img {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Downloaded_Qr_4.39_5.98.jpg" alt="Fonepay QR Code" class="qr-image" oncontextmenu="return false;">
+        
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.qr-image').addEventListener('wheel', function(event) {
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>
