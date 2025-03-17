@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Ads & Canva Training Program</title>
+    <style>
+        :root {
+            --primary-color: #4267B2;
+            --secondary-color: #E1306C;
+            --accent-color: #42B72A;
+            --text-color: #333;
+            --light-bg: #f7f9fc;
+            --dark-bg: #2c3e50;
+            --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            margin-bottom: 40px;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(66, 183, 42, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(66, 183, 42, 0.6);
+        }
+        
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+        
+        .course-intro {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 40px;
+        }
+        
+        .day-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+            transition: var(--transition);
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .day-card:nth-child(2) {
+            border-left-color: var(--secondary-color);
+        }
+        
+        .day-card:nth-child(3) {
+            border-left-color: var(--accent-color);
+        }
+        
+        .day-card:nth-child(4) {
+            border-left-color: #FF9900;
+        }
+        
+        .day-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark-bg);
+        }
+        
+        .day-title span {
+            display: inline-block;
+            padding: 5px 15px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+        
+        .topic {
+            margin-bottom: 25px;
+        }
+        
+        .topic-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .topic-list {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        
+        .topic-list li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .topic-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .methodology, .payment, .completion {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+        
+        .info-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-bg);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin: 0 10px;
+            line-height: 40px;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .day-title {
+                font-size: 1.5rem;
+            }
+            
+            .day-card, .course-intro, .methodology, .payment, .completion {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Meta Ads & Canva Training</h1>
+                <p class="tagline">Master Training on Meta Ads + Canva: Zero to Hero in Digital Marketing Strategy</p>
+                <a href="https://forms.gle/qyPjW5JJgvTM6cko8" class="cta-button">Enroll Now</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="course-intro">
+            <h2 class="section-title">Program Overview</h2>
+            <p>Meta Ads, powered by one of the world's largest digital advertising networks, provides businesses with powerful tools to connect and engage with audiences across platforms like Facebook, Instagram, Messenger, and WhatsApp. Are you ready to harness the full potential of Meta Ads and elevate your digital marketing skills?</p>
+            <br>
+            <p>This comprehensive training is your gateway to mastering the art of creating and managing effective ad campaigns on Meta platforms. Whether you're a beginner or a professional aiming to refine your expertise, this program covers everything from audience targeting and campaign setup to ad optimization and performance tracking. Learn how to design compelling ads that not only capture attention but also deliver tangible results.</p>
+            <br>
+            <p>With step-by-step guidance and hands-on practice led by expert trainers, you'll gain the confidence and skills to run successful ad campaigns that grow your brand or business. Don't miss this opportunity to unlock the power of Meta Ads and achieve your marketing goals!</p>
+        </section>
+        
+        <h2 class="section-title">Course Content</h2>
+        
+        <div class="day-card">
+            <h3 class="day-title"><span>Day 1</span> Fundamentals of Digital Marketing and Business Profile Setup</h3>
+            
+            <div class="topic">
+                <h4 class="topic-title">1. Introduction to Digital Marketing</h4>
+                <ul class="topic-list">
+                    <li>What is digital marketing?</li>
+                    <li>Key differences between digital marketing and traditional marketing.</li>
+                    <li>Importance of digital marketing in today's world.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">2. Scope and Career Opportunities in Digital Marketing</h4>
+                <ul class="topic-list">
+                    <li>Career paths and growth potential in the digital marketing industry.</li>
+                    <li>Skills needed to excel in this field.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">3. Practical Session: Setting Up Business Profiles</h4>
+                <ul class="topic-list">
+                    <li>Step-by-step guide to creating a Facebook business profile.</li>
+                    <li>Setting up and optimizing an Instagram business account.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="day-card">
+            <h3 class="day-title"><span>Day 2</span> Meta Ads Overview and Foundations</h3>
+            
+            <div class="topic">
+                <h4 class="topic-title">1. Introduction to Meta Ads and Platforms</h4>
+                <ul class="topic-list">
+                    <li>What are Meta Ads?</li>
+                    <li>Overview of Meta's ad platforms: Facebook, Instagram, & Messenger.</li>
+                    <li>Types of ad formats (image, video, carousel, etc.).</li>
+                    <li>Role and importance of Meta Ads in digital marketing.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">2. Setting Up Your Meta Advertising Ecosystem</h4>
+                <ul class="topic-list">
+                    <li>Creating and verifying a Facebook Business Manager account.</li>
+                    <li>Adding Assets: Facebook Pages, Instagram, and payment methods.</li>
+                    <li>Overview of Ads Manager: Navigating the interface.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">3. Understanding Campaign Structures</h4>
+                <ul class="topic-list">
+                    <li>Explanation of Campaign, Ad Set, and Ad Levels.</li>
+                    <li>Objectives breakdown: Awareness, Consideration, and Conversion.</li>
+                    <li>Meta's ad policies and guidelines overview.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">4. Practical Session</h4>
+                <ul class="topic-list">
+                    <li>Hands-on setup of a Facebook Business Manager account.</li>
+                    <li>Exploring and navigating the Ads Manager dashboard.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="day-card">
+            <h3 class="day-title"><span>Day 3</span> Campaign Review and Advanced Tools</h3>
+            
+            <div class="topic">
+                <h4 class="topic-title">1. Campaign Review and Recap</h4>
+                <ul class="topic-list">
+                    <li>Reviewing campaigns created in previous sessions.</li>
+                    <li>Revisiting the structure, objectives, and policies.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">2. Introduction to Meta Business Suite</h4>
+                <ul class="topic-list">
+                    <li>Understanding Meta Business Suite and its features.</li>
+                    <li>Managing and scheduling posts, responding to messages, and tracking insights.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">3. Optimizing Business Profiles</h4>
+                <ul class="topic-list">
+                    <li>Tips for maintaining an effective Facebook and Instagram business profile.</li>
+                    <li>Strategies for audience engagement and improved visibility.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">4. Practical Session</h4>
+                <ul class="topic-list">
+                    <li>Hands-on exploration of Meta Business Suite.</li>
+                    <li>Finalizing business profiles for maximum impact.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="day-card">
+            <h3 class="day-title"><span>Day 4</span> Canva Design For Social Media</h3>
+            
+            <div class="topic">
+                <h4 class="topic-title">1. Introduction to Canva Design Principles</h4>
+                <ul class="topic-list">
+                    <li>Understanding the fundamentals of visual design: color theory, typography, composition.</li>
+                    <li>Importance of consistent branding across social media platforms.</li>
+                    <li>Exploring design trends and best practices for social media.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">2. Canva Interface and Features</h4>
+                <ul class="topic-list">
+                    <li>Navigating the Canva interface: templates, elements, uploads, text, and more.</li>
+                    <li>Using pre-made templates for various social media formats (posts, stories, covers).</li>
+                    <li>Customizing templates: changing colors, fonts, and images.</li>
+                    <li>Utilizing Canva's element library: icons, photos, videos, and graphics.</li>
+                    <li>Understanding layers and grouping for effective design.</li>
+                </ul>
+            </div>
+            
+            <div class="topic">
+                <h4 class="topic-title">3.Creating Engaging Social Media Content</h4>
+                <ul class="topic-list">
+                    <li>Designing visually appealing posts for Facebook, Instagram, and other platforms.</li>
+                    <li>Creating eye-catching Instagram Stories and Reels.</li>
+                    <li>Designing effective cover photos and profile pictures.</li>
+                    <li>Utilizing Canva's animation and video features for dynamic content.</li>
+                    <li>Designing Ads and other promotional materials.</li>
+                </ul>
+
+                <div class="topic">
+                    <h4 class="topic-title">4. Pratical Session and Workshop</h4>
+                    <ul class="topic-list">
+                        <li>Hands-on design exercises: creating social media posts based on specific prompts</li>
+                        <li>Designing content aligned with individual business or brand needs.</li>
+                        <li>Collaborative design review and feedback session.</li>
+                        <li>Tips and tricks for efficient and effective Canva usage.</li>
+                        <li>Exporting and optimizing designs for different social media platforms.</li>
+                    </ul>
